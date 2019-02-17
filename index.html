@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form method="post" action="" name="myForm" onsubmit="validation()">
+      <div>
+        <label>Name</label>
+        <input type="text" name="Name" id="Name"/>
+      </div>
+      <br/>
+      <div>
+        <label>Last Name</label>
+        <input type="text" name="Lastname" id="LastName"/>
+      </div>
+      <br/>
+      <div>
+        <label>Telephone</label>
+        <input type="text" name="Lastname" id="LastName" pattern="\d{9,12}"/>
+      </div>
+      <br/>
+      <div>
+        <label>Email</label>
+        <input type="text" name="Lastname" id="LastName" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"/>
+      </div>
+      <input type="submit" value="submit"/>
+    </form>
+  </body>
+  <script src="index.js">
+
+  </script>
+</html>
